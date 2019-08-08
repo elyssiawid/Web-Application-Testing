@@ -10,23 +10,23 @@ it("renders without crashing", () => {
   ReactDOM.unmountComponentAtNode(div);
 });
 ​
-describe("<App />", () => {
-  it("renders without crashing", () => {
-    render(<App />);
-  });
-​
-  it("should display strikes and balls", () => {
-    const { getByText } = render(<App />);
-​
-    getByText(/strikes/i);
-​
-    getByText(/balls/i);
-  });
-​
-  it("should add strikes and balls", () => {
-    const { getByText } = render(<App />);
-​
-    const button = getByText(/strike/i);
-    fireEvent.click(button);
-  });
-});
+// describe("<App />", () => {
+//   it("renders without crashing", () => {
+//     render(<App />);
+//   });
+// ​
+//   it("should display strikes and balls", () => {
+//     const { getByText } = render(<App />);
+// ​
+//     getByText(/strikes/i);
+// ​
+//     getByText(/balls/i);
+//   });
+// ​
+//   it("should add strikes and balls", () => {
+//     const { getByText } = render(<App />);
+// ​
+//     const button = getByText(/strike/i);
+//     fireEvent.click(button);
+//   });
+// });
